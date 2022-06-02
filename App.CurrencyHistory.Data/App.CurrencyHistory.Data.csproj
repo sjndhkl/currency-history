@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\App.CurrencyHistory.Common\App.CurrencyHistory.Common.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="ExchangeRate\" />
+    <None Remove="ExchangeRate\Model\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ExchangeRate\" />
+    <Folder Include="ExchangeRate\Model\" />
+  </ItemGroup>
+</Project>

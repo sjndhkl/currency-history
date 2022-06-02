@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Requests\" />
+    <None Remove="Responses\" />
+    <None Remove="Types\" />
+    <None Remove="Contracts\" />
+    <None Remove="NLog.Extensions.Logging" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Requests\" />
+    <Folder Include="Responses\" />
+    <Folder Include="Types\" />
+    <Folder Include="Contracts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="NLog.Extensions.Logging" Version="5.0.0" />
+  </ItemGroup>
+</Project>

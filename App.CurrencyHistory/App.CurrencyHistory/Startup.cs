@@ -43,6 +43,8 @@ namespace App.CurrencyHistory
 
             app.UseRouting();
 
+            app.RegisterExceptionHandler();
+
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

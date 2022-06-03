@@ -25,8 +25,7 @@ namespace App.CurrencyHistory.Controllers
         [HttpGet]
         public async Task<CurrencyHistoryResponse> GetAsync([FromRoute] CurrencyHistoryRequest request)
         {
-           var response = await currencyHistoryDataSource.get(request);
-           return response;
+            return await currencyHistoryDataSource.get(request);
         }
     }
 }
